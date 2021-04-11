@@ -1,0 +1,146 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Reset CSS is above*/
+
+body{
+    background-color: whitesmoke;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+	background-image: url(../images/logo.png);
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+ 
+}
+.wrapper{
+    margin-right: 5cm;
+    margin-left: 5cm;
+
+}
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+	padding: 20px;
+	font-size: 40px;
+}
+ h2{
+     text-align: center;
+     color: black;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+.pic{
+	width: 400px;
+	height: 350px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.des{
+	padding: 20px;
+	text-align: center;
+}
+h4{
+	text-align: center;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: larger;
+}
+.Contact{
+    padding: 20px;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+.acheivements{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+}
+.projects{
+    border: 2px solid black;
+}
+
+.intro {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.footer {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    padding-top: 60px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+.footer a{
+    color: red;
+}
+
+@media screen and (min-width: 1050px){
+    .acheivements{
+        
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+@media screen and (min-width: 1600px){
+
+    .acheivements{
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

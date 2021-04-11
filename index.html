@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>My Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniyal Hussain">
+        <meta name="keywords" content="My Portfolio, Portfolio, about me">
+        <meta name="description" content="My Portfolio">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/nav.css">
+    </head>
+
+<!--This is the heart of our website-->
+
+    <body class="container">
+    <div>
+        <header>
+            <nav>
+                <ul>
+                    <a href="#" class="logo">DH Portfolio</a>
+                    <li class="home"><a href="#introduction">Introduction</a></li>
+                    <li class="about"><a href="#Aboutme">About Me</a></li>
+                    <li class="achieve"><a href="#achievements">Achievements</a></li>
+                    <li class="contact"><a href="#contact">Contact</a></li>
+                   
+                </ul>
+            </nav>
+        </header>
+    
+         
+        <main class="wrapper">
+     
+         <h1  id="introduction">Welcome To My Portfolio</h1>
+        <br>
+         <article>
+        <section class="intro">  
+        <div>
+            <p>
+                Hello, welcome to my portfolio, my name is Daniyal Hussain, I am in my first year of Mount Royal University in the program of Computer Information Systems. <br>
+                Throughout my first year, I have developed skills in programming languages like Java, Html, and CSS. Towards the future, I hope to improve on these skills <br>
+                of mine and use them to achieve my goals. I hope you enjoy knowing a little about myself and showing off the various acheivements and the things I have <br>
+                involved with. Thank you for visiting my portfolio. 
+            </p>
+        </div>
+        <br> 
+        <br>
+        <br>
+        <h1 id="Aboutme">A little Video About Myself</h1>
+        <video id="video" poster="images/myVideo.mp4" controls width="480" height="360">
+            <source src="images/video.mp4" type='video/mp4'>
+            </video>
+        </section>
+        <br>
+        <br>
+        <h1 id="achievements">My Achievements</h1>
+        <br>
+        <section class="acheivements">
+    
+        <div class="projects" id="snakegame">
+            <h4>Snake Game</h4>
+            <p class="des">
+                One of my projects I have made is a Snake game with Java. Throughout the game I faced challenges such as figuring out how to make it that the apple goes to random spots of 
+                the page. With this game, I used java libraries like javax and used a gui system imbeded with the IDE I used to develop the game. In the image below is a demonstration
+                of the game's design. With making this game, I was able to increase my knowledge in programming and now I am able to use this knowledge to create more programming projects.
+            </p>
+            <img src="./images/snake.png" alt="snakegame" class="pic">
+            
+               
+            
+        </div>
+        <div class="projects" id="intern">
+            <h4>ICSC Internship</h4>
+            <p class="des">
+                I also have been able to work for a non-profit organization called Islamic Center of South Calgary as an intern. For this company, I work as an IT assistant to help the 
+                organization with tasks such as website maintenance, online school technical support, and program organization. With each task given, I was put through challenges that would
+                help me with problem solving for example, I was asked to design and develop a form for volenteer recruitment. For the last 6 months, I was able to put my skills of 
+                programming to help this company grow.
+            </p>
+            <img src="./images/ICSC.jpg" alt="ICSC" class="pic">
+        </div>
+        <div class="projects" id="inven">
+        <h4>Inventory System</h4>
+        <p class="des">
+            Another one of my projects I have been working on is a Inventory system with Java. This allows the user to either search a toy and purchase it, add a toy into the database, and 
+            remove a toy from the database. The libraries I used for this program are JavaFX and the utilities that are imbedded within this plugin. To design the program I used an app
+            called Scenebuilder. This made it easier to design as it would require me to learn a completely different language. This program required me to face challenges and overcome 
+            these challenges. 
+        </p>
+        <img src="./images/inven.PNG" alt="ICSC" class="pic">
+        </div>
+        <div class="projects" id="Tutor">
+            <h4>Tutoring</h4>
+            <p class="des">
+                At this non-profit company, Skookum Jim Friendship Centre, I was asked to tutor the various students that have signed up for their learning programs. With this task in hand,
+                I was put through challenges as different students had different subjects and I needed to teach myself some of these courses. Although, this job allowed me to use my leadership
+                skills and improve on them. Skookum Jim Friendship Centre goal was to ensure the physical and mental well-being of First Nations, and fostering the way of Friendship & understanding 
+                between people.
+            </p>
+            <img src="./images/skookum.jpg" alt="ICSC" class="pic">
+        </div>
+        </section>
+       
+       
+        <section class="Contact">
+        <h4 id="contact">Reach out to us through this form.</h4>
+        <br>
+        <br>
+        <form action="mailto:contact@tdmhs.com" method="GET" name="contact">
+            
+            <p>
+                <label>
+                    *Name: <span class="required"></span>
+                    <br>
+                    <input type="text" name="Subject" style="width: 340px;" maxlength="50" required />
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    *Email: <span class="required"></span>
+                    <br>
+                    <input type="text"  placeholder="johndoe@gmail.com" name="email" style="width: 340px;" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    *Inquiry: <span class="required"></span>
+                    <br>
+                    <textarea name="Inquiry" rows="5" cols="45" required ></textarea>
+                </label>
+            </p>
+
+            <p> <input type="submit" value="Submit" class="input"> </p>
+
+        </form>    
+    </section>
+
+        <br>
+        </article>
+      
+    </main>  
+</div>
+    <footer class="footer">
+        <a href="#introduction">Introduction</a>
+        <a href="#Aboutme">About Me</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </footer>        
+    </body>
+</html>
